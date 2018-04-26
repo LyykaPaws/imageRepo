@@ -1,6 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ryan's Reference Images Repo</title>
-   </head>
+
+<head>
+  <title>Ryan's Reference Images Repo</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header"><a class="navbar-brand" href="javascript:void(0);">Ryan's Reference Images Repo</a></div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">About</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">Pok&#233;mon<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0);" onclick="$(&quot;.current&quot;).hide(); $(&quot;.current&quot;).removeClass(&quot;current&quot;); $(&quot;#buizel&quot;).show(); $(&quot;#buizel&quot;).addClass(&quot;current&quot;); js_SetDivHeight(&quot;#buizelCarousel&quot;); js_SetDivHeight(&quot;.carousel-inner &gt; .item &gt; img&quot;);">Buizel</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="buizel">
+    <div class="carousel slide" id="buizelCarousel" data-ride="carousel">
+      <!-- Indicators-->
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#buizelCarousel" data-slide-to="0"></li>
+        <li class="active" data-target="#buizelCarousel" data-slide-to="0"></li>
+        <li class="active" data-target="#buizelCarousel" data-slide-to="0"></li>
+      </ol>
+      <!-- Wrapper for slides-->
+      <div class="carousel-inner">
+        <div class="item active" style="background-color: black;"><img src="https://raw.githubusercontent.com/PwnzLPs/imageRepo/upload-these-to-imgur/buizel%20ref%20sheet/418Buizel_DP_anime.png" alt="Ref Pic 1"></div>
+        <div class="item" style="background-color: black;"><img src="https://raw.githubusercontent.com/PwnzLPs/imageRepo/upload-these-to-imgur/buizel%20ref%20sheet/418Buizel_DP_anime_2.png" alt="Ref Pic 2"></div>
+        <div class="item" style="background-color: black;"><img src="https://raw.githubusercontent.com/PwnzLPs/imageRepo/upload-these-to-imgur/buizel%20ref%20sheet/418_buizel__01__by_adfpf1-d8wiagw.png" alt="Ref Pic 3"></div>
+      </div>
+      <!-- Left and Right Controls--><a class="left carousel-control" href="#buizelCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#buizelCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a></div>
+  </div>
+  <script>
+    function js_SetDivHeight(item) {
+      var divTop, windowHeight, divHeight;
+
+      divTop = jQuery(item).offset().top
+      windowHeight = jQuery(window).height();
+      divHeight = (windowHeight - divTop) + "px";
+
+      jQuery(item).css({
+        "height": divHeight
+      });
+    }
+  </script>
+</body>
+
 </html>
