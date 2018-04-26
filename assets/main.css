@@ -1,0 +1,11 @@
+.carousel-inner > .item > img {
+		margin: 0 auto;
+}
+
+#buizel {
+	display: none;
+}
+
+.current {
+	display: block !important;
+}
